@@ -16,6 +16,7 @@
 #### 09/21/14
 
 *Describe Version Control
+
 Version control is a system that saves and logs changes made to your files. With version control, you are able to revert back to a previous working edit at any time in case you do something horribly wrong. Each save-point is known as a commit. 
 
 *How does git help you keep track of changes?
