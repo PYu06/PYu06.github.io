@@ -1,0 +1,18 @@
+#header {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 30px;
+		
+}
+
+#title {
+	font-size: 3em;
+	font-family: Garamond;
+	font-weight: bold;
+}
+
+#date {
+	font-size: 1.2em;
+	font-family: Helvetica;
+
+}
