@@ -4,7 +4,7 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="./stylesheets/blog-stylesheet.css">
-		<title>Arrays vs. Hashes!</title>
+		<title>PYu06 - Technical Blog</title>
 	</head>
 	<body>
 		<div id="header"> 
@@ -15,10 +15,10 @@
 			<div id="blog"><p>Arrays are an ordered collection of objects. These objects can be numbers or strings, but the index has to be an integer. Since arrays are an ordered collection, you can reference the first index by using <code>array[0]</code>, and the next index would be <code>array[1]</code>. You increase the index number by 1 each time. Alternatively, you can reference the last index by either <code>array.last</code> or <code> array[-1]</code>, and go backwards from -1 to the first index.</p>
 			<p>Hashes on the other hand have a key=>value pair, and either of these can be a number or string. The indexing is done by the object keys.</p>
 			<p>The difference between indexing means that in arrays, you can only point to one object. Whereas with hashes, and object key can point towards several value objects. This makes using hashes more beneficial when you have a list that have similar keys. For example:</p>
-				<pre><code>movies = Hash.new
-movies = {
-					:Comedy => "The Other Guys, 21 Jump Street",
-				:Action => "The Expendables, X-Men"
+			<pre class="code"><code>movies = Hash.new
+	movies = {
+	:Comedy => "The Other Guys, 21 Jump Street",
+	:Action => "The Expendables, X-Men"
 	}
 	puts movies[:Comedy]</code></pre>
 			<p>This gives us: <code>The Other Guys, 21 Jump Street</code></p>

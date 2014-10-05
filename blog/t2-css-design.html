@@ -1,71 +1,93 @@
-The Box Model
-
-<p>The easiest way to explain the difference between Margin, Border, and Padding for CSS is to use The Box Model:</p>
-<img src="../imgs/box-model.JPG"/>
-<p>As you can see from the image, the margin is the outermost layer of the box. It is an invisible divider between this object and other objects around it. There are several ways you can format margin:</p>
-<pre><code>p {
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./stylesheets/blog-stylesheet.css">
+		<title>PYu06 - Technical Blog</title>
+	</head>
+	<body>
+		<div id="header"> 
+			<div id="title">The Box Model</div>
+			<div id="date">Oct 1 '14</div>
+		</div>
+		<div id="content">
+			<div id="blog">
+	<p>The easiest way to explain the difference between Margin, Border, and Padding for CSS is to use The Box Model:</p>
+	<img src="../imgs/box-model.JPG"/>
+	<p>As you can see from the image, the margin is the outermost layer of the box. It is an invisible divider between this object and other objects around it. There are several ways you can format margin:</p>
+<pre class="code"><code>p {
 	margin-top: #px;
 	margin-bottom: #px;
 	margin-right: #px;
 	margin-left: #px;
-}</code></pre>
-<p>Or you can use a short form version:</p>
-<pre><code>p {
+	}</code></pre>
+	<p>Or you can use a short form version:</p>
+<pre class="code"><code>p {
 	margin: #px #px #px #px;
-}</code></pre>
-<p>The order goes from top, right, bottom, to left.<br>
-You could also do:</p>
-<pre><code>p {
+	}</code></pre>
+	<p>The order goes from top, right, bottom, to left.<br>
+	You could also do:</p>
+	<pre class="code"><code>p {
 	margin: 10px 30px 50px;
-}</code></pre>
-<p>This specifies that the top will have a margin of 10px, the right and left will have a margin of 30px, and the bottom will have a margin of 50px.<br>
-If you only specify two margins, then the top and bottom will have the same margin of 20px, and the right and left will share the same margin of 30px:</p>
-<pre><code>p {
+	}</code></pre>
+	<p>This specifies that the top will have a margin of 10px, the right and left will have a margin of 30px, and the bottom will have a margin of 50px.<br>
+	If you only specify two margins, then the top and bottom will have the same margin of 20px, and the right and left will share the same margin of 30px:</p>
+	<pre class="code"><code>p {
 	margin: 20px 30px;
-}</code></pre>
-<p>Lastly, you can specify the margin for all four sides of the box by:</p>
-<pre><code>p {
+	}</code></pre>
+	<p>Lastly, you can specify the margin for all four sides of the box by:</p>
+	<pre class="code"><code>p {
 	margin: 35px;
-}</code></pre>
+	}</code></pre>
 
-<p>Border is what you think it is. A border around your object. You can control the style, width, and colour. The different styles of borders you can have are: none, dotted, dashed, solid, double, groove, ridge, inset, and outset. The width is determined by pixels. The colour can be changed using either a name, a RGB value, or a hex value.<br> 
-Like the margin property, you can format the border in several ways: </p>
-<pre><code>p {
+	<p>Border is what you think it is. A border around your object. You can control the style, width, and colour. The different styles of borders you can have are: none, dotted, dashed, solid, double, groove, ridge, inset, and outset. The width is determined by pixels. The colour can be changed using either a name, a RGB value, or a hex value.<br> 
+	Like the margin property, you can format the border in several ways: </p>
+	<pre class="code"><code>p {
 	border-style: solid;
 	border-color: black;
-}</code></pre>
-<p>Or: </p>
-<pre><code>p {
+	}</code></pre>
+	<p>Or: </p>
+	<pre class="code"><code>p {
 	border-top-style: double;
 	border-right-style: dotted;
 	border-bottom-style: ridge;
 	border-left-style: solid;
-}</code></pre>
-<p>Just like with margin, you can also use a short hand form:</p>
-<pre><code>p {
+	}</code></pre>
+	<p>Just like with margin, you can also use a short hand form:</p>
+	<pre class="code"><code>p {
 	border-style: double dotted ridge solid;
-}</code></pre>
-<p>Double top, dotted right and left, ridge bottom:</p>
-<pre<code>p {
+	}</code></pre>
+	<p>Double top, dotted right and left, ridge bottom:</p>
+	<pre class="code"><code>p {
 	border-style: double dotted ridge;
-}</code></pre>
-<p>Double top and bottom, dotted right and left:</p>
-<pre><code>p {
+	}</code></pre>
+	<p>Double top and bottom, dotted right and left:</p>
+	<pre class="code"><code>p {
 	border-style: double dotted;
-}</code></pre>
-<p>All four solid:</p>
-<pre><code>p {
+	}</code></pre>
+	<p>All four solid:</p>
+	<pre class="code"><code>p {
 	border-style: solid;
-}</code></pre>
-<p>You can also combine width, style, and colour into one line:</p>
-<pre><code>p {
+	}</code></pre>
+	<p>You can also combine width, style, and colour into one line:</p>
+	<pre class="code"><code>p {
 	border: 3px dotted red;
-}</code></pre>
-<p>N.B. You need to select a "border-style" in order for "border-color" to work. </p>
+	}</code></pre>
+	<p>N.B. You need to select a "border-style" in order for "border-color" to work. </p>
 
-<p>Finally padding! Padding is the space between the content and the border. Just like with margin and border, you can format padding in multiple ways: individually, top right bottom left, top right/left bottom, top/bottom right/left, and all four at once.<br>
-The shorthand format is:</p>
-<pre><code>p {
+	<p>Finally padding! Padding is the space between the content and the border. Just like with margin and border, you can format padding in multiple ways: individually, top right bottom left, top right/left bottom, top/bottom right/left, and all four at once.<br>
+	The shorthand format is:</p>
+	<pre class="code"><code>p {
 	padding: #px;
-}</code></pre>
-<p>To summarise, the difference between Margin, Border, and Padding is that they are different properties of The Box Model. Margin is the transparent outermost layer, border is the outline around the object, and the padding is the area that separates the content from the border.</p>
+	}</code></pre>
+	<p>To summarise, the difference between Margin, Border, and Padding is that they are different properties of The Box Model. Margin is the transparent outermost layer, border is the outline around the object, and the padding is the area that separates the content from the border.</p>
+
+		
+			</div>
+		</div>
+		<div id="footer">
+			<div class="buttons", id="archive"><a href="blogmainpage.html">Archive</a></div>
+			<div class="buttons", id="profile"><a href="../index.html">Home</a></div>
+		</div>
+	</body>
+</html>
