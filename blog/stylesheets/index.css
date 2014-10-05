@@ -1,0 +1,54 @@
+#header {
+	background-color: #BA2C0C;
+	height: 100px;
+	text-align: center;
+	padding-top: 15px;
+}
+
+#name a {
+	text-decoration: none;
+	font-size: 1.5em;
+	font-family: ;
+	color: black;
+}
+
+#name a:visited {
+
+}
+
+#name a:hover {
+	background-color: #FF690D;
+}
+
+#navigationbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 1.6em;
+}
+
+#bar li {
+	display: inline;
+	text-decoration: none;
+	background-color: #BA2C0C;
+	padding: 0px 60px;
+}
+
+#bar li a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#bar li a:visited{
+	
+
+}
+#bar li a:hover {
+	background-color: #FF660D;
+}
+
+#blurb {
+	text-align: center;
+	padding: 0px 300px;
+}
