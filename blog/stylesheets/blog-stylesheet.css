@@ -16,3 +16,40 @@
 	font-family: Helvetica;
 
 }
+
+#blog {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	text-indent: 50px;
+}
+
+#footer	{
+	padding-top: 88px;
+}
+
+div.buttons {
+	display: inline;
+	width: 100px;
+	text-align: center;
+	font-family: Garamond;
+	font-weight: bold;
+}
+
+a:link {
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+}
+
+#archive {
+	float: left;
+}
+
+#profile {
+	float:right;
+	
+
+}
