@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./stylesheets/blog-stylesheet.css">
+		<title>PYu06 - Technical Blog</title>
+	</head>
+	<body>
+		<div id="header"> 
+			<div id="title">Ruby's Got Class</div>
+			<div id="date">Oct 17 '14</div>
+		</div>
+		<div id="content">
+			<div id="blog">
+				<p>Greetings reader! Today I'm going to talk about Ruby Classes. A class is like a title given to contain a group of objects that you want to act the same way. I'm going to create an example class for habits. To define a class you would do:</p>
+<pre class="code"><code>class Habit
+	end
+</code></pre>
+				<p>Within a class, you can instance methods and instance variables.Instance methods and variables are basically the same as methods and variables except for the fact that they are shared by all objects inside the class, and are preceeded by an "@" sign. </p>
+<pre class="code"><code>class Habit
+		def initialize(name, start_date)
+			@name = name
+			@start_date = start_date
+		end
+
+		def name
+			@name
+		end
+
+		def start_date
+			@start_date
+		end
+
+		def stop_date
+			p "You should do #{@name} for at least 21 days starting from #{@start_date}. Work hard!"
+		end
+	end
+</code></pre>
+				<p>With the previous code block, you can now create a new habit by typing:</p>
+<pre class="code"><code> ex = Habit.new("Exercise","Oct 17 '14")</code></pre>
+						<p>You can then call the method stop_date:</p>
+<pre class="code"><code>ex.stop_date</code></pre>
+						<p>Which will output:</p>
+<pre class="code"><code>"You should do Exercise for at least 21 days starting from Oct 17 '14. Work hard!"</code></pre>
+				<p>You can now create as many instances as you want for class Habit, and they will be able to do all the method calls you define within the class.</p>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="buttons", id="archive"><a href="blogmainpage.html">Archive</a></div>
+			<div class="buttons", id="profile"><a href="../index.html">Home</a></div>
+		</div>
+	</body>
+</html>
