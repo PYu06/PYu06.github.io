@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./stylesheets/blog-stylesheet.css">
+		<title>PYu06 - Technical Blog</title>
+	</head>
+	<body>
+		<div id="header"> 
+			<div id="title">Variable Scopes</div>
+			<div id="date">Oct 28 '14</div>
+		</div>
+		<div id="content">
+			<div id="blog">
+				<p>As a reminder: variables in Ruby are declared by defining a variable name = to a value. e.g. <code>some_string = "Hello World!"</code>. Thus a scope of a variable is where the variable is visible in a Ruby program. Ruby has 5 variable scopes: a global variable, a class variable, an instance variable, a local variable, and a constant.</p>
+				<p>A global variable is preceeded by a <code>$</code>. I.e: <code>$global_var = "Everyone can see me =O!"</code>. As the value of <code>$global_var</code> states, a global variable is accessible from anywhere in the Ruby program. It doesn't even matter where you put the global variable in your program. For this reason, it is advised that you don't use global variables as they can also be changed from anywhere in the program making it hard to track any bugs that may occur.</p>
+				<p>A class variable is defined by: <code>@@class_var = "Hello all instances!"</code>, and it has to be defined before you can call it (unlike global variable which you can place anywhere in the program). Any instance within the class can access and alter the class variable. If you change the class variable in one method, it changes the value of the variable for all the other methods you call on it.</p>
+				<p>An instance variable has the following prefix: <code>@instance_var = "I'm a little more selective"</code>. Instance variables are similar to class variables, except for the fact that the value only changes in the method that is called in; it doesn't change the value of <code>@instance_var</code> for the whole class.</p>
+				<p>A local variable doesn't have a prefix, and are usually all lower case: <code>local_var = "I'm quite short lived =("</code>. It can only be accessed and called within the method that it is defined in. A common use for a local variable is when you want to use a counter method.</p>
+				<p>Constants are as their name suggests, a variable that (should) stays constant throughout the program. They can be defined anywhere within a class. If you do decide to change the value of a constant, Ruby will give you an error saying that the value of the constant has changed. Oh, and constants look like this: <code>CONSTANT = "I ABHOR CHANGE!"</code></p>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="buttons", id="archive"><a href="blogmainpage.html">Archive</a></div>
+			<div class="buttons", id="profile"><a href="../index.html">Home</a></div>
+		</div>
+	</body>
+</html>
