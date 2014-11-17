@@ -1,14 +1,20 @@
+html {
+	background-color: black;
+	color: #c8c8c8;
+	font-family: 'Lora', serif;
+}
+
 #header {
 	background-color: #BA2C0C;
 	height: 100px;
 	text-align: center;
 	padding-top: 15px;
+	border-radius: 15px;
 }
 
 #name a {
 	text-decoration: none;
 	font-size: 1.5em;
-	font-family: ;
 	color: black;
 }
 
@@ -33,6 +39,7 @@
 	text-decoration: none;
 	background-color: #BA2C0C;
 	padding: 0px 60px;
+	border-radius: 15px;
 }
 
 #bar li a:link {
@@ -41,6 +48,7 @@
 }
 
 #bar li a:visited{
+	color: black;
 	
 
 }
@@ -51,4 +59,23 @@
 #blurb {
 	text-align: center;
 	padding: 0px 300px;
+}
+
+#blogPosts {
+	list-style-type: none;
+	text-align: center;
+}
+
+#blogPosts li a:link{
+	color: #c8c8c8;
+	text-decoration: none;
+}
+
+#blogPosts a:visited {
+	color: #888888;
+}
+
+.date {
+	font-size: 0.7em;
+	padding-bottom: 130px;
 }

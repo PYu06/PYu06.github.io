@@ -1,3 +1,10 @@
+html {
+	font-family: HelveticaNeue-Light;
+	color: #c8c8c8;
+	background-color: black;
+
+}
+
 #header {
 	text-align: center;
 	padding-top: 20px;
@@ -25,6 +32,7 @@
 	text-indent: 50px;
 }
 
+
 #footer	{
 	padding-top: 88px;
 }
@@ -39,9 +47,14 @@ div.buttons {
 
 a:link {
 	text-decoration: none;
+	color: #888888;
 }
 a:hover {
 	color: red;
+}
+
+a:visited {
+	color: #888888;
 }
 
 #archive {
